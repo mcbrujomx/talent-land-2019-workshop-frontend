@@ -8,3 +8,13 @@ before_script:
 script:
   - echo "Antes de la construccion"
   - npm build
+  - is
+
+deploy:
+  provider: pages
+  local-dir: build/
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    brench: master
