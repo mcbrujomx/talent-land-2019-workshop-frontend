@@ -6,5 +6,5 @@ before_script:
   - npm install
   
 script:
-  - echo "Antes de la construccion
+  - echo "Antes de la construccion"
   - npm build
